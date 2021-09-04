@@ -1,0 +1,280 @@
+body
+    margin: 0
+::-webkit-scrollbar //скрывает скроллбар на странице
+    width: 0
+
+//первый экран
+.main
+    min-height: 800px
+    background: url(../img/main_bg.jpg) center center/cover no-repeat
+.container //задает сетку
+    max-width: 1146px
+    margin: 0 auto
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 35px 0 0 0
+nav
+    display: flex
+    justify-content: space-between
+    width: 656px
+a
+    font-weight: 700
+    font-size: 22px
+    color: #ffffff
+    text-decoration: none
+    &:hover //серый цвет при наведении на ссылку
+        transition: 0.2s
+        color: #cecece
+.main_text
+    color: #ffffff
+    padding: 252px 0 0 0
+    .title
+        font-weight: 700
+        font-size: 50px
+    .subtitle
+        font-weight: 700
+        font-size: 36px
+        padding: 20px 0 0 0
+.arrow_down
+    position: absolute
+    display: block
+    padding: 243px 913px 0
+    animation-duration: 1.8s
+    animation-name: swim
+    animation-iteration-count: infinite
+.grad
+    height: 336px
+    background-image: linear-gradient(to top, #534739, rgba(53, 47, 39, .0))
+
+//секция с карточками с информацией
+.info
+    min-height: 1080px
+    background-color: #534739
+.block
+    padding: 200px 200px
+    height: 800px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    img
+        width: 237px
+    .text
+        font-weight: 700
+        font-size: 30px
+        text-align: center
+    .about
+        font-size: 22px
+        font-weight: 700
+    &_country
+        transition: 0.2s
+        height: 600px
+        width: 400px
+        background-color: #40362B
+        border-radius: 45px
+        color: #ffffff
+        box-shadow: 25px 25px 4px 0px rgba(0, 0, 0, 0.1)
+        &:hover //приближение карточки при наведении
+            transition: 0.2s
+            height: 650px
+            width: 420px
+    &_fun
+        transition: 0.2s
+        background-color: #40362B
+        height: 650px
+        width: 400px
+        border-radius: 45px
+        color: #ffffff
+        box-shadow: 25px 25px 4px 0px rgba(0, 0, 0, 0.1)
+        .wrapper
+            height: 80%
+        &:hover //приближение карточки при наведении
+            transition: 0.2s
+            height: 700px
+            width: 430px
+    &_review
+        transition: 0.2s
+        height: 600px
+        width: 400px
+        background-color: #40362B
+        border-radius: 45px
+        color: #ffffff
+        box-shadow: 25px 25px 4px rgba(0, 0, 0, 0.1)
+        &:hover //приближение карточки при наведении
+            transition: 0.2s
+            height: 650px
+            width: 420px
+    .wrapper
+        display: flex
+        height: 80%
+        width: 90%
+        padding: 50px 20px
+        flex-flow: column
+        justify-content: space-between
+        align-items: center
+
+//секция о компании
+.company
+    min-height: 1080px
+    display: flex
+    .sliderblock
+        width: 975px
+        background-color: #40362B
+    .textblock
+        width: 945px
+        background-color: #665747
+    .underline //линия под "О нас"
+        width: 529px
+        margin: 0 auto
+        margin-top: 27px
+    .title
+        color: #ffffff
+        font-weight: 700
+        font-size: 50px
+        text-align: center
+        padding-top: 120px
+    .text
+        color: #ffffff
+        font-weight: 400
+        font-size: 28px
+        width: 683px
+        height: 264px
+        margin: 0 auto
+        padding-top: 171px
+    .img_slider
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 120px 58px 0 58px
+        .arrow_left
+            width: 67px
+            height: 48px
+            transform: rotate(90deg)
+        .arrow_right
+            width: 67px
+            height: 48px
+            transform: rotate(-90deg)
+    .dots
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 201px
+        margin: 0 auto
+        padding-top: 23px
+        .dot
+            width: 12px
+            height: 12px
+            background-color: #ffffff
+            border-radius: 100%
+.top_line //верхняя белая линия
+        margin: 20px 0 0 0
+.bottom_line //нижняя белая линия
+    margin: 195px 0 20px
+
+//секция с контактами
+.contacts
+    min-height: 550px
+    display: flex
+    .contblock
+        width: 975px
+        background-color: #ececec
+        .border1
+            width: 925px
+            height: 500px
+            border: 1px double black
+            margin: 25px
+        .title
+            font-weight: 700
+            font-size: 40px
+        .wrapper
+            display: flex
+            flex-direction: column
+            padding: 50px 0 0 94px
+            float: left
+            .geo
+                display: flex
+                align-items: center
+                padding-top: 75px
+                &_text
+                    padding-left: 28px
+                    font-weight: 500
+                    font-size: 20px
+            .phone
+                display: flex
+                align-items: center
+                padding-top: 30px
+                &_text
+                    padding-left: 28px
+                    font-weight: 500
+                    font-size: 20px
+            .mail
+                display: flex
+                align-items: center
+                padding-top: 30px
+                &_text
+                    padding-left: 28px
+                    font-weight: 500
+                    font-size: 20px
+        .block_map
+            display: flex
+            padding: 240px 0 0 300px
+            .maptext
+                font-weight: 700
+                font-size: 30px
+                transform: rotate(-90deg)
+                &:hover
+                    animation-duration: 0.6s
+                    animation-name: shake
+    .mapblock
+        width: 945px
+        background-color: #d9d9d9
+        .border2
+            width: 895px
+            height: 500px
+            border: 1px double black
+            margin: 25px
+        iframe
+            display: block
+            margin: 0 auto
+            padding-top: 25px
+            width: 809px
+            height: 450px
+
+.catalog
+    min-height: 1080px
+    background-color: #665747
+    background-image: linear-gradient(to top, #40362B, rgba(66, 57, 47, .0))
+    .cards
+        display: flex
+        width: 1710px
+        justify-content: space-between
+        margin: 0 auto
+        padding-top: 121px
+        .card
+            width: 350px
+            height: 550px
+            background-color: #40362B
+            border-radius: 45px
+            box-shadow: 25px 25px 4px 0px rgba(0, 0, 0, 0.1)X-UA-Compatible
+            &_wrapper
+                height: 436px
+                width: 300px
+                margin: 38px 25px 76px 25px
+            &_name
+                color: #ffffff
+                font-weight: 500
+                font-size: 30px
+                text-align: center
+            &_img
+                width: 300px
+                height: 260px
+                border-radius: 45px
+                margin: 0 auto
+                padding-top: 28px
+            &_price
+                color: #ffffff
+                font-weight: 300
+                font-size: 30px
+                text-align: center
+                padding-top: 72px
